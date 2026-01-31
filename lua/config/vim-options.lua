@@ -6,7 +6,10 @@ vim.cmd("set shiftwidth=2")
 
 -- Set Leader
 vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
+vim.g.maplocalleader = ","
+
+-- Enable Python3
+vim.g.python3_host_prog = os.getenv("HOME") .. "/.local/share/nvim/venv/bin/python"
 
 -- Disable automatic newline comments
 vim.api.nvim_create_autocmd("FileType", {
