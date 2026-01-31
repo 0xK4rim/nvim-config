@@ -145,3 +145,8 @@ local function run_current_file()
 	)
 end
 vim.keymap.set("n", "<leader>r", run_current_file, { noremap = true, silent = true })
+
+-- Get LaTeX template
+vim.api.nvim_create_user_command("Templatex", function()
+	vim.fn.jobstart({ "fish", "-c", "templatex" })
+end, {})
