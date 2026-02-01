@@ -147,6 +147,8 @@ end
 vim.keymap.set("n", "<leader>r", run_current_file, { noremap = true, silent = true })
 
 -- Get LaTeX template
-vim.api.nvim_create_user_command("Templatex", function()
-	vim.fn.jobstart({ "fish", "-c", "templatex" })
-end, {})
+vim.api.nvim_create_user_command("Templatex", function(opts)
+	vim.fn.jobstart({ "fish", "-c", "templatex " .. vim.fn.shellescape(opts.args) })
+end, {
+	nargs = 1,
+})
