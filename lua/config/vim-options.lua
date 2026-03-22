@@ -24,6 +24,14 @@ vim.api.nvim_set_keymap(
 	{ noremap = true, silent = true }
 )
 
+-- Treat .h files as C++ instead of C
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+	pattern = "*.h",
+	callback = function()
+		vim.bo.filetype = "cpp"
+	end,
+})
+
 -- Global LSP diagnostic configuration
 vim.diagnostic.config({
 	virtual_text = {
@@ -51,4 +59,3 @@ vim.opt.scrolloff = 6
 vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
-

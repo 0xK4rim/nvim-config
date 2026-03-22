@@ -7,8 +7,8 @@ return {
 			executable = "latexmk",
 			options = { "-pdf", "-interaction=nonstopmode", "-synctex=1" },
 		}
-		vim.g.vimtex_view_method = "zathura"
-		vim.g.vimtex_view_general_viewer = "zathura"
+		vim.g.vimtex_view_method = "sioyek"
+		vim.g.vimtex_view_general_viewer = "sioyek"
 		vim.g.vimtex_view_general_options = "--synctex-forward @line:@col:@tex @pdf"
 		vim.g.vimtex_quickfix_mode = 0
 		vim.g.vimtex_syntax_enabled = 1

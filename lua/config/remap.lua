@@ -50,7 +50,7 @@ end)
 
 -- Fetch Macros
 vim.api.nvim_create_user_command("Macro", function()
-	local source_file = vim.fn.expand("~/K/Study/CP/macros.txt")
+	local source_file = vim.fn.expand("~/K/Study/CP/Templates/macros.h")
 	local lines = vim.fn.readfile(source_file)
 	local cursor = vim.api.nvim_win_get_cursor(0)
 	local row = cursor[1] - 1

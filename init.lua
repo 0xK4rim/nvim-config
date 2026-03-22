@@ -1,11 +1,11 @@
 -- Setup Vim options
-require ("config.vim-options")
+require("config.vim-options")
 
 -- Setup remaps
-require ("config.remap")
+require("config.remap")
 
 -- Setup Lazy
 require("config.lazy")
 
 -- Disable Arrow keys movement
-require ("config.disablearrows")
+require("config.disablearrows")
