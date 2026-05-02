@@ -8,4 +8,4 @@ require("config.remap")
 require("config.lazy")
 
 -- Disable Arrow keys movement
-require("config.disablearrows")
+-- require("config.disablearrows")

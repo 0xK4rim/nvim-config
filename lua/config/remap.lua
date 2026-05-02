@@ -115,6 +115,15 @@ local function python_run_venv()
 	vim.cmd("startinsert")
 end
 
+-- Run Racket
+local function run_racket()
+	local src = vim.fn.expand("%:p")
+	local src_esc = vim.fn.shellescape(src)
+	vim.cmd("write")
+	local full_cmd = string.format('racket %s ; echo ; read -n1 -s -r -p "Press any key to close..."', src_esc)
+	vim.fn.jobstart({ "kitty", "bash", "-ic", full_cmd }, { detach = true })
+end
+
 -- Dispatcher: pick runner by filetype or extension
 local function run_current_file()
 	local ft = vim.bo.filetype
@@ -135,6 +144,10 @@ local function run_current_file()
 		or ext == "hpp"
 	then
 		cp_run_kitty()
+		return
+	end
+	if ft == "racket" then
+		run_racket()
 		return
 	end
 	vim.notify(
