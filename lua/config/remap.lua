@@ -3,7 +3,7 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- For testing
-vim.api.nvim_set_keymap("n", "<leader>tf", "<Plug>PlenaryTestFile", { noremap = false, silent = false })
+vim.api.nvim_set_keymap("n", "<leader>ptf", "<Plug>PlenaryTestFile", { noremap = false, silent = false })
 vim.keymap.set("n", "<leader>lt", function()
 	vim.cmd([[ PlenaryBustedFile % ]])
 end)
