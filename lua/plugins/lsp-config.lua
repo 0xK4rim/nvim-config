@@ -9,7 +9,7 @@ return {
 		"mason-org/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "clangd", "pyright", "texlab", "ts_ls" },
+				ensure_installed = { "lua_ls", "clangd", "pyright", "texlab"},
 			})
 		end,
 	},
@@ -32,8 +32,6 @@ return {
 			vim.lsp.enable("pyright")
 			vim.lsp.config("texlab", { capabilities = capabilities })
 			vim.lsp.enable("texlab")
-			vim.lsp.config("ts_ls", { capabilities = capabilities })
-			vim.lsp.enable("ts_ls")
 			vim.lsp.config("racket_langserver", {
 				capabilities = capabilities,
 				cmd = { "racket", "-l", "racket-langserver" },
