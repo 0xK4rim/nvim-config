@@ -3,7 +3,7 @@ return {
 	config = function()
 		require("FCPT").setup({
 			test_file = "/home/Shinobid/Downloads/sample-cases.txt",
-			sanitizer = true,
+			sanitizer = false,
 		})
 	end,
 }

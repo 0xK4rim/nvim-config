@@ -40,6 +40,9 @@ vim.keymap.set("n", "Q", "<nop>")
 -- Replace all the occurences in the whole file
 vim.keymap.set("n", "<leader>subw", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
+-- Replace all the occurences in the selected text
+vim.keymap.set("x", "<leader>subs", ":s///gI<Left><Left><Left>")
+
 -- Make the current file executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 

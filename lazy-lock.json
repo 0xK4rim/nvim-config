@@ -1,5 +1,5 @@
 {
-  "FCPT.nvim": { "branch": "main", "commit": "9170eb40f444f2511fa1deb13c921053d2ea91e3" },
+  "FCPT.nvim": { "branch": "main", "commit": "27af5349d775934b9edc720adab9a165de1ec836" },
   "LuaSnip": { "branch": "master", "commit": "0abc8f390b278c3b4aabc4c004ac8a088b65cf24" },
   "alpha-ascii.nvim": { "branch": "main", "commit": "0d9ee001495caf4e597476aaaca1133f0c444ae6" },
   "alpha-nvim": { "branch": "main", "commit": "6c6a89d5b068b5251c8bdf0dd57bb921bcfeeb09" },
@@ -13,7 +13,6 @@
   "lualine.nvim": { "branch": "master", "commit": "131a558e13f9f28b15cd235557150ccb23f89286" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "7b01e2974a47d489bb92f47a41e4c0088ea8f86e" },
   "mason.nvim": { "branch": "main", "commit": "bb639d4bf385a4d89f478b83af4d770be05ab7eb" },
-  "matugen.nvim": { "branch": "main", "commit": "835a2f4c7b32e5e0fa57f3595a04a638ff74d8bc" },
   "mini.nvim": { "branch": "main", "commit": "44657837c7338e52727facc85c1d95bec1f6bd7c" },
   "neo-tree.nvim": { "branch": "v3.x", "commit": "ebd66767191714e008ce73b769518a763ff31bdc" },
   "none-ls.nvim": { "branch": "main", "commit": "f9d557ac7cd28a3a993b5ea49716498bd540b01f" },
